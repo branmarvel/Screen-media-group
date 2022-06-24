@@ -1,0 +1,156 @@
+/*
+ * ────────────────────────────────────────────────────────────────────────── I ──────────
+ *   :::::: E S T I L O S   G E N E R A L E S : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────────────────────────────
+ */
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+}
+* {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.vh-80 {
+  min-height: 80vh;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-white {
+  background-color: white;
+}
+
+.c-white {
+  color: white;
+}
+.text-center {
+  text-align: center;
+}
+.h-1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.p-7 {
+  padding: 7%;
+}
+.py-1 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* --------- flex --------- */
+.f-just-c-center {
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-center {
+  justify-content: center;
+  align-content: center;
+}
+
+.f-just-c-center {
+  justify-content: center;
+}
+.flex-nav {
+  align-items: center;
+  justify-content: space-evenly;
+}
+.f-space {
+  justify-content: space-evenly;
+}
+/* --------- flex --------- */
+
+/*
+ * ──────────────────────────────────────────────────────── ESTILOS GENERALES ─────
+ */
+
+/*
+ * ──────────────────────────────────────────────────── II ──────────
+ *   :::::: H E A D E R: :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────
+ */
+
+.btn {
+  text-decoration: none;
+  color: transparent;
+  display: inline-block;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font: normal 16px / normal "Times New Roman", Times, serif;
+  color: rgba(249, 249, 249, 1);
+  text-overflow: clip;
+  background: rgba(0, 0, 0, 0);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    31% 76%,
+    3% 100%,
+    16% 76%,
+    0% 75%
+  );
+}
+
+.btn:hover {
+  color: rgba(80, 134, 216, 0.9);
+  background: white;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: -1px -1px 0 rgba(15, 73, 168, 0.66);
+}
+
+/*
+ * ─────────────────────────────────────────────────────────────────── HEADER ─────
+ */
+
+/*
+ * ────────────────────────────────────────────────────────── III ──────────
+ *   :::::: S E C T I O N   1 : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────────────
+ */
+.d-block-1 {
+  display: block;
+  padding: 4%;
+  border-radius: 25px;
+  transform: translateY(-155px);
+}
+
+/*
+  * ─── SECTION 1 ──────────────────────────────────────────────────────────────────
+  */
+
+/*
+   * ────────────────────────────────────────────────────────── IV ──────────
+   *   :::::: S E C T I O N   2 : :  :   :    :     :        :          :
+   * ────────────────────────────────────────────────────────────────────
+   */
+.t-gradient {
+  color: #7150df;
+  background: linear-gradient(to right, #7150df 0%, #2388cb 42%, #8ecaed 100%);
+}
+
+/*
+    * ──────────────────────────────────────────────────────────────── SECTION 2 ─────
+    */
