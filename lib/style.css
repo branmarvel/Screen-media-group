@@ -7,7 +7,6 @@
 .container {
   max-width: 1080px;
   margin: auto;
-  display: flex;
 }
 * {
   font-family: "Montserrat", sans-serif !important;
@@ -39,6 +38,13 @@
   font-size: 3.5rem;
   font-weight: bold;
 }
+.h-2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.p-4 {
+  padding: 1.5rem !important;
+}
 .p-7 {
   padding: 7%;
 }
@@ -53,6 +59,11 @@
 }
 
 .flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-logo {
   display: flex;
   flex-direction: row;
 }
@@ -72,11 +83,12 @@
 }
 .flex-nav {
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .f-space {
   justify-content: space-evenly;
 }
+
 /* --------- flex --------- */
 
 /*
@@ -120,6 +132,10 @@
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
   text-shadow: -1px -1px 0 rgba(15, 73, 168, 0.66);
 }
+.container-nav {
+  max-width: 1200px;
+  margin: auto;
+}
 
 /*
  * ─────────────────────────────────────────────────────────────────── HEADER ─────
@@ -146,11 +162,57 @@
    *   :::::: S E C T I O N   2 : :  :   :    :     :        :          :
    * ────────────────────────────────────────────────────────────────────
    */
+.c-green {
+  color: #0fb8e0;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.t-light {
+  font-weight: 300;
+}
 .t-gradient {
-  color: #7150df;
-  background: linear-gradient(to right, #7150df 0%, #2388cb 42%, #8ecaed 100%);
+  background-image: linear-gradient(
+    to right,
+    #7150df 0%,
+    #2388cb 42%,
+    #8ecaed 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: #fff;
 }
 
 /*
     * ──────────────────────────────────────────────────────────────── SECTION 2 ─────
     */
+
+/*
+   * ────────────────────────────────────────────────────────── IV ──────────
+   *   :::::: Slider : :  :   :    :     :        :          :
+   * ────────────────────────────────────────────────────────────────────
+   */
+
+.slider {
+  overflow: hidden;
+}
+
+/*
+    * ──────────────────────────────────────────────────────────────── SECTION 2 ─────
+    */
+
+/*
+ * ──────────────────────────────────────────────────────────── X ──────────
+ *   :::::: R E S P O N S I V E : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────────────
+ */
+
+@media screen and (max-width: 768px) {
+  .flex-row {
+    flex-direction: column !important;
+    flex: 1;
+    align-items: center;
+  }
+}
