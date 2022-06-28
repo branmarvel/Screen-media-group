@@ -31,8 +31,23 @@
 .c-white {
   color: white;
 }
+.c-green {
+  color: #4ed994;
+}
+.c-gray {
+  color: gray;
+}
+.c-purple {
+  color: #a465e7;
+}
+.c-blue {
+  color: #0bb6dc;
+}
 .text-center {
   text-align: center;
+}
+.m-0 {
+  margin: 0 !important;
 }
 .h-1 {
   font-size: 3.5rem;
@@ -42,15 +57,67 @@
   font-size: 2.5rem;
   font-weight: bold;
 }
-.p-4 {
+
+.h-3 {
+  font-size: 1.75rem;
+}
+.h-4 {
+  font-size: 1.5rem;
+}
+.h-5 {
+  font-size: 1.25rem;
+}
+.h-6 {
+  font-size: 1rem;
+}
+.pt-2 {
+  padding-top: 2rem !important;
+}
+.p-2 {
+  padding: 0.5rem !important;
+}
+.p-3 {
   padding: 1.5rem !important;
+}
+.p-4 {
+  padding: 2rem !important;
+}
+.p-5 {
+  padding: 3rem !important;
 }
 .p-7 {
   padding: 7%;
 }
 .py-1 {
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.py-2 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+.py {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.px-1 {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+.px-5 {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.font-weight-bold {
+  font-weight: 700 !important;
 }
 
 /* --------- flex --------- */
@@ -76,10 +143,12 @@
 .f-center {
   justify-content: center;
   align-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
-.f-just-c-center {
-  justify-content: center;
+.f-align-c-center {
+  align-items: center;
 }
 .flex-nav {
   align-items: center;
@@ -90,6 +159,15 @@
 }
 
 /* --------- flex --------- */
+
+/* ~~~~ owl-carousel ~~~~~~~~~~~~~~~~~~~~~~~~ */
+.item-v {
+  transform: rotate(-90deg);
+}
+.owl-carousel-v {
+  transform: rotate(90deg);
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ owl-carousel ~~~ */
 
 /*
  * ──────────────────────────────────────────────────────── ESTILOS GENERALES ─────
@@ -149,8 +227,41 @@
 .d-block-1 {
   display: block;
   padding: 4%;
-  border-radius: 25px;
+
   transform: translateY(-155px);
+}
+
+.rounded {
+  border-radius: 1.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.text-a-1 {
+  animation: image_blur 5s infinite;
+}
+
+@keyframes image_blur {
+  0% {
+    filter: blur(1px);
+  }
+  15% {
+    filter: blur(2px);
+  }
+  25% {
+    filter: blur(3px);
+  }
+  50% {
+    filter: blur(20px);
+  }
+  75% {
+    filter: blur(3px);
+  }
+  88% {
+    filter: blur(2px);
+  }
+  100% {
+    filter: blur(1px);
+  }
 }
 
 /*
@@ -162,9 +273,6 @@
    *   :::::: S E C T I O N   2 : :  :   :    :     :        :          :
    * ────────────────────────────────────────────────────────────────────
    */
-.c-green {
-  color: #0fb8e0;
-}
 
 .w-50 {
   width: 50%;
@@ -195,13 +303,29 @@
    * ────────────────────────────────────────────────────────────────────
    */
 
-.slider {
-  overflow: hidden;
-}
-
 /*
     * ──────────────────────────────────────────────────────────────── SECTION 2 ─────
     */
+
+/*
+ * ──────────────────────────────────────────────────── V ──────────
+ *   :::::: F O O T E R : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────
+ */
+
+.a-link {
+  text-decoration: none;
+  color: #2388cb;
+  font-weight: bolder;
+}
+.a-link:hover {
+  color: #18699e;
+  text-decoration: underline;
+}
+
+/*
+ * ─────────────────────────────────────────────────────────────────── FOOTER ─────
+ */
 
 /*
  * ──────────────────────────────────────────────────────────── X ──────────
@@ -213,6 +337,14 @@
   .flex-row {
     flex-direction: column !important;
     flex: 1;
-    align-items: center;
+  }
+  .order-1 {
+    order: -1;
+  }
+  .w-50 {
+    width: 100%;
+  }
+  .text-center-res {
+    text-align: center;
   }
 }
