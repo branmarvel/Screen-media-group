@@ -179,7 +179,7 @@
  * ──────────────────────────────────────────────────────────────
  */
 
-.btn {
+/* .btn {
   text-decoration: none;
   color: transparent;
   display: inline-block;
@@ -203,13 +203,43 @@
     0% 75%
   );
 }
-
 .btn:hover {
   color: rgba(80, 134, 216, 0.9);
   background: white;
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
   text-shadow: -1px -1px 0 rgba(15, 73, 168, 0.66);
+} */
+
+.btn{
+  position: relative;
+  padding: 15px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+   border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    31% 76%,
+    3% 100%,
+    16% 76%,
+    0% 75%
+  );
 }
+.btn:hover{
+  background: white;
+  color:#0bb6dc;
+  letter-spacing: 4px;
+  
+}
+
 .container-nav {
   max-width: 1200px;
   margin: auto;
